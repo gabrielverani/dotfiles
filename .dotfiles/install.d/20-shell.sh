@@ -44,6 +44,7 @@ fish -c "
     fisher install edc/bass                   # Suporte a scripts Bash no Fish
     fisher install danhper/fish-ssh-agent
     fisher install pure-fish/pure
+    fisher takashabe/fish-peco
     "
 
 echo "✅ Fish Shell configurado com sucesso!"

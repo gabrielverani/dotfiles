@@ -16,13 +16,13 @@ Este repositório contém meus **dotfiles** e um **script de instalação automa
 Você pode configurar seu ambiente rodando um único comando:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/gabrielverani/dotfiles/main/.dotfiles/install.sh)
+bash -c <(curl -fsSL https://raw.githubusercontent.com/gabrielverani/dotfiles/main/.dotfiles/install.sh)
 ```
 
 Ou, se preferir `wget`:
 
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/gabrielverani/dotfiles/main/.dotfiles/install.sh)
+bash -c <(wget -qO- https://raw.githubusercontent.com/gabrielverani/dotfiles/main/.dotfiles/install.sh)
 ```
 
 Isso irá:
@@ -62,7 +62,7 @@ dotfiles pull
 Para atualizar os pacotes do sistema, execute:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/gabrielverani/dotfiles/main/.dotfiles/install.sh)
+bash -c <(curl -fsSL https://raw.githubusercontent.com/gabrielverani/dotfiles/main/.dotfiles/install.sh)
 ```
 
 ---

@@ -22,28 +22,6 @@ else
   echo "✅ Git já está instalado!"
 fi
 
-# Configuração global do Git
-echo "🔹 Configurando Git..."
-
-git config --global user.name "Gabriel Verani"
-git config --global user.email "gabriel.verani@gmail.com"
-git config --global core.editor "nvim"
-git config --global init.defaultBranch "main"
-git config --global pull.rebase false
-git config --global push.default simple
-git config --global diff.tool "delta"
-git config --global interactive.diffFilter "delta --color-only"
-git config --global delta.navigate true
-git config --global delta.light false
-
-# Melhorias nos logs
-git config --global alias.lg "log --oneline --graph --decorate --all"
-git config --global alias.co "checkout"
-git config --global alias.cm "commit -m"
-git config --global alias.br "branch"
-git config --global alias.st "status"
-git config --global alias.df "diff"
-
 echo "✅ Git configurado com sucesso!"
 
 # Instalando Delta para melhorar o diff do Git

@@ -12,6 +12,9 @@ TOOLS=(
   fzf
   ripgrep
   bat
+  btop
+  peco
+  ghq
   eza
   tree
   alacritty

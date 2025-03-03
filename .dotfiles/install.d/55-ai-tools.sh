@@ -14,15 +14,6 @@ else
   echo "⚠️ GitHub CLI não encontrado. Instale antes de usar o Copilot CLI."
 fi
 
-# 🔹 Instalar OpenAI CLI
-echo "🔹 Instalando OpenAI CLI..."
-if [[ "$OS_TYPE" == "mac" ]]; then
-  brew install openai
-else
-  pip install --user openai
-fi
-echo "✅ OpenAI CLI instalada!"
-
 # 🔹 Instalar Ollama (para rodar LLMs locais)
 echo "🔹 Instalando Ollama (LLM local)..."
 if [[ "$OS_TYPE" == "mac" ]]; then
