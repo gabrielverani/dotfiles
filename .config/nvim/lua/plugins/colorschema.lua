@@ -26,40 +26,32 @@ return {
       dim_inactive = false,
       transparent_mode = true,
     },
-    config = function()
-      vim.cmd([[colorscheme gruvbox]])
-    end,
   },
   {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
-    config = function()
-      -- vim.cmd([[colorscheme tokyonight]])
-    end,
   },
   {
     "catppuccin/nvim",
     lazy = false,
     priority = 1000,
-    config = function()
-      -- vim.cmd([[colorscheme catppuccin]])
-    end,
   },
   {
     "navarasu/onedark.nvim",
     lazy = false,
     priority = 1000,
-    config = function()
-      -- vim.cmd([[colorscheme onedark]])
-    end,
   },
   {
     "bluz71/vim-nightfly-colors",
     lazy = false,
     priority = 1000,
-    config = function()
-      -- vim.cmd([[colorscheme nightfly]])
-    end,
+  },
+  -- Configure LazyVim to load gruvbox
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gruvbox",
+    },
   },
 }
