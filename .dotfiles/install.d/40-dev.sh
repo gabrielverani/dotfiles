@@ -4,9 +4,10 @@ OS_TYPE=$1
 DISTRO=$2
 
 echo "🔹 Instalando ferramentas de desenvolvimento..."
-
+k
 if [[ "$OS_TYPE" == "mac" ]]; then
-  brew install python node docker
+  brew install python node
+  brew install --cask docker
 elif [[ "$DISTRO" == "ubuntu" || "$DISTRO" == "debian" ]]; then
   sudo apt install -y python3 python3-pip nodejs docker.io
 elif [[ "$DISTRO" == "arch" ]]; then

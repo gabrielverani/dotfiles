@@ -5,6 +5,7 @@ DISTRO=$2
 
 echo "🔹 Instalando Fish Shell..."
 
+# Instala Fish conforme o sistema operacional
 if ! command -v fish &>/dev/null; then
   if [[ "$OS_TYPE" == "mac" ]]; then
     brew install fish
@@ -27,10 +28,22 @@ if [[ "$SHELL" != "$(command -v fish)" ]]; then
   chsh -s $(command -v fish)
 fi
 
-# Instala Fisher (Gerenciador de Plugins do Fish)
+# Instalar Fisher (Gerenciador de Plugins do Fish)
 if [[ ! -f "$HOME/.config/fish/functions/fisher.fish" ]]; then
   echo "🔹 Instalando Fisher..."
   fish -c 'curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher'
 else
   echo "✅ Fisher já está instalado!"
 fi
+
+# Instalar plugins essenciais do Fish
+echo "🔹 Instalando plugins do Fish..."
+fish -c "
+    fisher install PatrickF1/fzf.fish         # Integração com FZF
+    fisher install jethrokuan/z               # Navegação rápida entre diretórios
+    fisher install edc/bass                   # Suporte a scripts Bash no Fish
+    fisher install danhper/fish-ssh-agent
+    fisher install pure-fish/pure
+    "
+
+echo "✅ Fish Shell configurado com sucesso!"

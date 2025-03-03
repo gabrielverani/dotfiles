@@ -14,6 +14,7 @@ TOOLS=(
   bat
   eza
   tree
+  alacritty
 )
 
 if [[ "$OS_TYPE" == "mac" ]]; then
@@ -26,4 +27,16 @@ elif [[ "$DISTRO" == "fedora" ]]; then
   sudo dnf install -y ${TOOLS[@]}
 else
   echo "⚠️ Distribuição não suportada para instalação de ferramentas."
+fi
+
+echo "🔹 Instalando Tmuxinator..."
+# Instalação do Tmuxinator (Gerenciador de Sessões Tmux)
+if ! command -v tmuxinator &>/dev/null; then
+  if [[ "$OS_TYPE" == "mac" ]]; then
+    brew install tmuxinator
+  else
+    sudo gem install tmuxinator
+  fi
+else
+  echo "✅ Tmuxinator já está instalado!"
 fi
