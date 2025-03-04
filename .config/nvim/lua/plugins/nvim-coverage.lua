@@ -13,9 +13,6 @@ return {
       auto_reload = true,
       commands = true,
       auto_reload_timeout_ms = 1000,
-      load_coverage_cb = function(ftype)
-        vim.notify("Loaded " .. ftype .. " coverage")
-      end,
       highlights = {
         -- customize highlight groups created by the plugin
         covered = { fg = "#C3E88D" }, -- supports style, fg, bg, sp (see :h highlight-gui)
@@ -32,6 +29,7 @@ return {
       },
       lang = {
         python = {
+          coverage_command = "coverage json -i -q -o -",
           coverage_file = ".coverage",
         },
       },

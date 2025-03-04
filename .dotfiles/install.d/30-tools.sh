@@ -15,6 +15,7 @@ TOOLS=(
   btop
   peco
   ghq
+  pipx
   eza
   tree
   alacritty

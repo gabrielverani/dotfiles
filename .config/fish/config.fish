@@ -62,3 +62,5 @@ end
 if status is-interactive
     # Aqui podem ser adicionados comandos que rodarão apenas em sessões interativas
 end
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
