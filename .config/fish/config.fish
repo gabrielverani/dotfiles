@@ -62,6 +62,9 @@ end
 if status is-interactive
     # Aqui podem ser adicionados comandos que rodarão apenas em sessões interativas
 end
+set -U fish_color_autosuggestion '#B2A687' # Cinza médio para sugestões (evita contraste baixo demais)
+# set -U fish_color_completion '#fabd2f --bold' # Amarelo brilhante para sugestões ao apertar Tab
+# set -U fish_color_search_match '#fbf1c7 --bold --underline' # Branco mais claro e sublinhado para buscas
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # ~/.config/fish/config.fish

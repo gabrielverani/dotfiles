@@ -19,7 +19,7 @@ bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 
-size = 16
+size = 14.5
 
 offset = { x = 0, y = 3 }
 
@@ -30,7 +30,7 @@ glyph_offset = { x = 0, y = 2 }
 [window]
 title = "Alacritty"                        # Define um título base com ícone
 dynamic_title = true                       # Permite que o título mude dinamicamente
-dimensions = { columns = 160, lines = 35 } # Dimensões iniciais da janela do terminal.
+dimensions = { columns = 150, lines = 35 } # Dimensões iniciais da janela do terminal.
 
 # Adiciona um leve espaçamento nas bordas internas da janela.
 padding = { x = 1, y = 1 }
@@ -41,7 +41,7 @@ decorations = "full"      # Usa todas as decorações da janela (barra de títul
 startup_mode = "Windowed" # Inicia em modo de janela.
 
 # Ajuste de transparência e efeitos visuais.
-opacity = 0.98 # Define uma leve transparência para o terminal.
+opacity = 0.95 # Define uma leve transparência para o terminal.
 blur = true    # Aplica um efeito de desfoque no fundo da janela (caso suportado pelo compositor do sistema).
 
 # Permite redimensionamento proporcional ao conteúdo.
