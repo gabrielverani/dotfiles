@@ -8,7 +8,7 @@ echo "🔹 Instalando Fish Shell..."
 # Instala Fish conforme o sistema operacional
 if ! command -v fish &>/dev/null; then
   if [[ "$OS_TYPE" == "mac" ]]; then
-    brew install fish
+    brew install fish starship
   elif [[ "$DISTRO" == "ubuntu" || "$DISTRO" == "debian" ]]; then
     sudo apt install fish -y
   elif [[ "$DISTRO" == "arch" ]]; then
@@ -43,8 +43,6 @@ fish -c "
     fisher install jethrokuan/z               # Navegação rápida entre diretórios
     fisher install edc/bass                   # Suporte a scripts Bash no Fish
     fisher install danhper/fish-ssh-agent
-    fisher install pure-fish/pure
-    fisher takashabe/fish-peco
     "
 
 echo "✅ Fish Shell configurado com sucesso!"

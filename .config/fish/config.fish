@@ -64,3 +64,7 @@ if status is-interactive
 end
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+# ~/.config/fish/config.fish
+
+starship init fish | source
+enable_transience
