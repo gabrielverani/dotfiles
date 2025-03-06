@@ -1,6 +1,7 @@
 return {
   {
     "ellisonleao/gruvbox.nvim",
+    lazy = false,
     priority = 1000,
     opts = {
       terminal_colors = true, -- add neovim terminal colors
@@ -28,6 +29,41 @@ return {
     },
   },
   {
+    "sainnhe/sonokai",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "sainnhe/edge",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "rebelot/kanagawa.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "EdenEast/nightfox.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "Mofiqul/dracula.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "folke/lsp-colors.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "lunarvim/horizon.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
@@ -44,6 +80,21 @@ return {
   },
   {
     "bluz71/vim-nightfly-colors",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "Mofiqul/vscode.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "rktjmp/lush.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
   },

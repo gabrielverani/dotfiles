@@ -5,25 +5,26 @@
 # Importa o tema Gruvbox Dark para uma melhor experiência visual.
 import = ["~/.config/alacritty/themes/themes/gruvbox-dark.yml"]
 
+[colors]
+primary = { background = "#1A1715", foreground = "#ebdbb2" }
+
 [env]
 # Configuração do terminal para suporte a cores estendidas.
 TERM = "xterm-256color"
 COLORTERM = "truecolor"
 
 [font]
-# Configuração da fonte utilizada no terminal.
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 
-# Tamanho da fonte para melhor legibilidade.
-size = 14.5
+size = 14
+
+offset = { x = 1, y = 4 }
 
 # Ajuste fino do posicionamento da fonte na renderização.
-offset = { x = 0, y = 2 }
-
-glyph_offset = { x = 0, y = 1 }
+glyph_offset = { x = 0, y = 2 }
 
 # Descomente e ajuste se precisar refinar ainda mais o alinhamento dos glifos.
 [window]
@@ -40,15 +41,16 @@ decorations = "full"      # Usa todas as decorações da janela (barra de títul
 startup_mode = "Windowed" # Inicia em modo de janela.
 
 # Ajuste de transparência e efeitos visuais.
-opacity = 0.95 # Define uma leve transparência para o terminal.
+opacity = 0.98 # Define uma leve transparência para o terminal.
 blur = true    # Aplica um efeito de desfoque no fundo da janela (caso suportado pelo compositor do sistema).
 
 # Permite redimensionamento proporcional ao conteúdo.
 resize_increments = true
 
 [cursor]
-# Define o estilo do cursor para um sublinhado.
-style = "Underline"
+style = { shape = "Beam", blinking = "Always" } # Cursor em barra "|" e piscando sempre
+blink_interval = 300                            # Tempo de piscada em milissegundos (padrão: 500ms)
+unfocused_hollow = true                         # O cursor fica oco quando a janela perde o foco
 
 [scrolling]
 # Define o histórico de rolagem para 10.000 linhas, permitindo maior retrospectiva.
