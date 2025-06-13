@@ -4,9 +4,6 @@
 [general]
 import = ["~/.config/alacritty/themes/themes/dark_plus.toml"]
 
-[colors]
-primary = { background = "#1A1715", foreground = "#ebdbb2" }
-
 [env]
 # Configuração do terminal para suporte a cores estendidas.
 TERM = "xterm-256color"
