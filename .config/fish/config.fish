@@ -13,7 +13,14 @@ set -Ux EDITOR nvim
 bind \cf _fzf_search_directory
 bind -M insert \cf _fzf_search_directory
 
-# shortcuts
+alias gs="git status"
+alias ga="git add ."
+alias gc="git commit -m"
+alias gp="git push"
+alias gl="git log --oneline --graph --all --decorate"
+alias gco="git checkout"
+alias gb="git branch"
+
 alias .. "cd .."
 alias cd.. "cd .."
 alias ll "ls -la"
@@ -49,25 +56,22 @@ alias gti git
 # Ativa realce de sintaxe no grep
 alias grep="grep --color=auto"
 
-# Substitui 'vi' por 'nvim' para abrir arquivos com Neovim
-alias vi="nvim"
-
-# -- INICIALIZAÇÃO DO AGENTE SSH --
-# Inicia o agente SSH automaticamente se ainda não estiver ativo
-if not set -q SSH_AUTH_SOCK
-    ssh-agent -s | source
-end
-
 # Verifica se a sessão é interativa antes de executar comandos específicos
 if status is-interactive
     # Aqui podem ser adicionados comandos que rodarão apenas em sessões interativas
 end
-set -U fish_color_autosuggestion '#B2A687' # Cinza médio para sugestões (evita contraste baixo demais)
-# set -U fish_color_completion '#fabd2f --bold' # Amarelo brilhante para sugestões ao apertar Tab
-# set -U fish_color_search_match '#fbf1c7 --bold --underline' # Branco mais claro e sublinhado para buscas
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-# ~/.config/fish/config.fish
 
-starship init fish | source
-enable_transience
+set -Ux OLLAMA_MODELS /Volumes/Verani-SSD/Ollama/models
+set -Ux MODELS_PATH /Volumes/Verani-SSD/LocalAI/models
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+# Created by `pipx` on 2025-06-02 03:47:37
+set PATH $PATH /Users/verani/.local/bin
+
+# Added by Windsurf
+fish_add_path /Users/verani/.codeium/windsurf/bin

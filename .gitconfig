@@ -55,3 +55,13 @@
 	process = git-lfs filter-process
 [ghq]
   root = ~/.ghq
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = false
+[user]
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPKR3TfF0Qv24IUQXhcGoXyt7hRTUAIXp8aSksZvwf/f
+	email = gabriel.verani@gmail.com
+	name = Gabriel Verani

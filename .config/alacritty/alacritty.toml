@@ -60,3 +60,8 @@ history = 10000
 
 # Ajusta a velocidade da rolagem do terminal.
 multiplier = 2
+
+[[keyboard.bindings]]
+key = "Space"
+mods = "Control"
+chars = "\u0000"
