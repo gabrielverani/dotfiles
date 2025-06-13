@@ -2,8 +2,7 @@
 # Configuração otimizada para produtividade e estética.
 
 [general]
-# Importa o tema Gruvbox Dark para uma melhor experiência visual.
-import = ["~/.config/alacritty/themes/themes/gruvbox-dark.yml"]
+import = ["~/.config/alacritty/themes/themes/dark_plus.toml"]
 
 [colors]
 primary = { background = "#1A1715", foreground = "#ebdbb2" }
